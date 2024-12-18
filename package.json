@@ -1,0 +1,15 @@
+{
+    "name": "prjGeraSenha",
+    "scripts": {
+        "dev": "npx npm-run-all --parallel senha-angular:dev senha-react:dev senha-vue:dev",
+        "senha-angular:dev": "cd senha-angular && npm start",
+        "senha-react:dev": "cd senha-react && npm run dev",
+        "senha-vue:dev": "cd senha-vue && npm run dev"
+    },
+    "workspaces": [
+        "regras",
+        "senha-angular",
+        "senha-react",
+        "senha-vue"
+    ]
+}

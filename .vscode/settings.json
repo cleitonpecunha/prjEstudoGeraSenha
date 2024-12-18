@@ -1,0 +1,9 @@
+{
+    "material-icon-theme.folders.associations": {
+        "conceitos": "core",
+        "regras": "resolver",
+        "senha-angular": "angular",
+        "senha-react": "react-components",
+        "senha-vue": "vue"
+    }
+}

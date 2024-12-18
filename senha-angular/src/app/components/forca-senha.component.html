@@ -1,0 +1,13 @@
+<div class="forca-senha">
+  <span>Força</span>
+  <div class="niveis">
+    <span class="texto">
+      @if (nivel === 1) { Fraca } @else if (nivel === 2) { Média } @else if
+      (nivel === 3) { Média } @else if (nivel === 4) { Forte }
+    </span>
+    <div class="nivel" [class]="classe"></div>
+    <div class="nivel" [class]="nivel >= 2 ? classe : ''"></div>
+    <div class="nivel" [class]="nivel >= 3 ? classe : ''"></div>
+    <div class="nivel" [class]="nivel == 4 ? classe : ''"></div>
+  </div>
+</div>

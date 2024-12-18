@@ -1,0 +1,35 @@
+<main class="tela">
+  <div class="conteudo">
+    <h1 class="titulo">Gerador de Senha</h1>
+    <app-exibir-senha [senha]="senha"></app-exibir-senha>
+    <div class="formulario">
+      <app-tamanho-senha
+        [tamanho]="tamanho"
+        (tamanhoMudou)="alterarTamanho($event)"
+      ></app-tamanho-senha>
+      <div class="caracteristicas-senha">
+        <app-caracteristica-senha
+          texto="Incluir Letras Minúsculas"
+          [valor]="minusculas"
+          (valorMudou)="alterarMinusculas($event)"
+        ></app-caracteristica-senha>
+        <app-caracteristica-senha
+          texto="Incluir Letras Maiúsculas"
+          [valor]="maiusculas"
+          (valorMudou)="alterarMaiusculas($event)"
+        ></app-caracteristica-senha>
+        <app-caracteristica-senha
+          texto="Incluir Números"
+          [valor]="numeros"
+          (valorMudou)="alterarNumeros($event)"
+        ></app-caracteristica-senha>
+        <app-caracteristica-senha
+          texto="Incluir Símbolos"
+          [valor]="simbolos"
+          (valorMudou)="alterarSimbolos($event)"
+        ></app-caracteristica-senha>
+      </div>
+      <app-forca-senha [nivel]="nivel"></app-forca-senha>
+    </div>
+  </div>
+</main>

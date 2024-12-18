@@ -1,0 +1,15 @@
+<div class="tamanho-senha">
+    <div class="info">
+      <span>Qtde de Caracteres</span>
+      <span>{{ tamanho }}</span>
+    </div>
+    <div class="slider">
+      <input
+        type="range"
+        min="4"
+        max="80"
+        [value]="tamanho"
+        (input)="alterarTamanho($event)"
+      />
+    </div>
+  </div>

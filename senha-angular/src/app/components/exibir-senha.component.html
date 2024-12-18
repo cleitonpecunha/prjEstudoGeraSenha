@@ -1,0 +1,13 @@
+<div class="exibir-senha">
+  <p class="senha">
+    @if (senha) { {{ senha }} } @else { Selecione as opções... }
+  </p>
+  <div>
+    <ng-icon
+      [svg="icone"]
+      [size="1.5rem"]
+      class="icone"
+      (click)="copiarParaAreaTransferencia()"
+    ></ng-icon>
+  </div>
+</div>

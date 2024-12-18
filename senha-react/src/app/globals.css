@@ -1,0 +1,206 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+	font-family: "JetBrains Mono";
+	font-display: swap;
+	font-style: normal;
+	src: url("./JetBrainsMono.ttf") format("truetype");
+}
+
+:root {
+	--background: #0a0a0a;
+	--background-zinc: #27272a;
+	--foreground: #ededed;
+	--primary: #3b88ff;
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: "JetBrains Mono";
+	box-sizing: border-box;
+}
+
+/* Geral */
+
+.tela {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.conteudo {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 20px;
+	width: 500px;
+}
+
+.titulo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: #a1a1aa;
+	margin: 0px;
+}
+
+/* Formulário */
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 28px;
+	background-color: var(--background-zinc);
+}
+
+.checkbox {
+	display: flex;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--primary);
+	opacity: 0.7;
+}
+
+.checkbox:checked {
+	background-color: var(--primary);
+	opacity: 1;
+}
+
+/* Exibir Senha */
+
+.exibir-senha {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	background-color: var(--background-zinc);
+	padding: 0px 28px;
+}
+
+.exibir-senha .senha {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #71717a;
+	word-break: break-all;
+}
+
+.exibir-senha .icone {
+	color: var(--primary);
+	cursor: pointer;
+}
+
+/* Tamanho Senha */
+.tamanho-senha {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.tamanho-senha .info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+}
+
+.tamanho-senha .info span:nth-child(1) {
+	font-size: 1.2rem;
+}
+
+.tamanho-senha .info span:nth-child(2) {
+	font-size: 1.7rem;
+	color: var(--primary);
+}
+
+.tamanho-senha .slider {
+	width: 100%;
+}
+
+.tamanho-senha .slider input {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+	background: #070707;
+	outline: none;
+}
+
+.caracteristicas-senha {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.caracteristicas-senha .caracteristica {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.tamanho-senha .slider input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	background: var(--primary);
+	cursor: pointer;
+}
+
+.tamanho-senha .slider input::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	background: var(--primary);
+	cursor: pointer;
+}
+
+/* Força Senha */
+.forca-senha {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #111;
+	padding: 16px 24px 16px 24px;
+	text-transform: uppercase;
+	color: #999;
+	font-weight: 800;
+}
+
+.forca-senha .niveis {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.forca-senha .niveis .texto {
+	padding-right: 5px;
+	color: #eee;
+}
+
+.forca-senha .nivel {
+	height: 25px;
+	width: 10px;
+	border: 1px solid #ccc;
+}
+
+.forca-senha .nivel.fraca {
+	border-color: #ef4444;
+	background-color: #ef4444;
+}
+
+.forca-senha .nivel.media {
+	border-color: #fde047;
+	background-color: #fde047;
+}
+
+.forca-senha .nivel.forte {
+	border-color: #22c55e;
+	background-color: #22c55e;
+}
